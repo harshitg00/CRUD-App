@@ -40,7 +40,7 @@ app.engine('hbs',handlebars(
 );
 app.set('view engine','hbs'); //Setting View Engine as hbs
 
-app.listen(4000, () =>{   //Starting express server(port, callback)
+app.listen(process.env.PORT || 4000, () =>{   //Starting express server(port, callback)
     console.log('Express server started at port: 4000');
 });
 app.get('/',(req,res)=>{
