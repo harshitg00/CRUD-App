@@ -11,12 +11,13 @@
   "dependencies": {
     "@handlebars/allow-prototype-access": "^1.0.3",
     "body-parser": "^1.18.3",
+    "config": "^3.3.2",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "mongoose": "^5.3.4",
     "nodemon": "^2.0.4"
   },
-  "engines" : { 
-    "node" : ">=12.0.0"
-  }  
+  "engines": {
+    "node": ">=12.0.0"
+  }
 }

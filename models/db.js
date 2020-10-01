@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-// const keys = require("../config/keys");
-mongoose.connect(process.env.mongoURI , { useNewUrlParser: true, useFindAndModify: false, useCreateIndex: true },
+const keys = require("../config/keys");
+mongoose.connect(process.env.mongoURI || keys.MongoURI, { useNewUrlParser: true, useFindAndModify: false, useCreateIndex: true },
   (err) => {
     if (err) {
       console.log(err);
