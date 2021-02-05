@@ -6,6 +6,7 @@ mongoose.connect(process.env.mongoURI , { useNewUrlParser: true, useFindAndModif
       console.log(err);
     } else {
       console.log("MongoDB Connected");
+      console.log("Lav");
     }
   }
 );
